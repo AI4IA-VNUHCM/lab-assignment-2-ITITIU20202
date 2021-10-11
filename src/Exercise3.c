@@ -13,9 +13,21 @@ ______________________________________
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	
 	//Your codes here
-	
+	void ProductOfPrimeNum (int input) {
+	int product =1;
+	for (int i = 2; i<=input; i++) {
+		while (input % i==0) {
+			input = input /i;
+			printf(" %d",i);
+			if (input==1){
+				break;
+			}
+			printf(" *");
+		}
+	}
+	}
+	ProductOfPrimeNum (testcase);
 	
 	return 0;
 }
